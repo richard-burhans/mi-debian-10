@@ -9,7 +9,7 @@ For more information on live-build see the [live-build manual](https://live-team
 
 In order to use this repo, you need to have the following:
 
- * A running Debian instance (physical or virtual) with spare disk space and  live-build 5.* installed.
+ * A running Debian instance (physical or virtual) with spare disk space and live-build installed.
  * A SmartOS machine
 
  
@@ -24,7 +24,7 @@ dpkg-buildpackage -b -uc -us
 cd ..
 ```
 
-Then install the newly build *deb file:
+Then install the newly built deb file:
 
 ```
 dpkg -i live-build_20190311_all.deb
