@@ -32,7 +32,7 @@ dpkg -i live-build_20190311_all.deb
 
 ## Configure
 
-Modify the scripts in `auto\` and `config` depending on how you want your ISO configured. See the [live-build manual](https://live-team.pages.debian.net/live-manual/html/live-manual/index.en.html) for more information.
+Modify the scripts in `auto` and `config` depending on how you want your ISO configured. See the [live-build manual](https://live-team.pages.debian.net/live-manual/html/live-manual/index.en.html) for more information.
 
 
 ## Usage
