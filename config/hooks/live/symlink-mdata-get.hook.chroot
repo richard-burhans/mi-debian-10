@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Creates mdata-get symlink for bwcompat
+
+set -e
+
+echo "==> Running hook script $0"
+
+ln -s /usr/sbin/mdata-get /lib/smartdc/mdata-get

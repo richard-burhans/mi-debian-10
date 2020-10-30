@@ -1,0 +1,31 @@
+#!/bin/sh
+
+set -e
+
+echo "==> Running hook script $0"
+
+BUILDDATE=`date +%Y%m%d`
+NAME="Debian 10 (buster)"
+WIKIURL="https://docs.joyent.com/images/linux/debian"
+
+
+# Create the MOTD
+rm /etc/motd
+
+cat << MOTD > /etc/motd
+   __        .                   .
+ _|  |_      | .-. .  . .-. :--. |-
+|_    _|     ;|   ||  |(.-' |  | |
+  |__|   \`--'  \`-' \`;-| \`-' '  ' \`-'
+                   /  ;  Instance (${NAME} ${BUILDDATE})
+                   \`-'   ${WIKIURL}
+
+MOTD
+
+# Create product file
+cat << PRODUCT > /etc/product
+Name: Joyent Instance
+Image: ${NAME} ${BUILDDATE}
+Documentation: ${WIKIURL}
+Descrtipion: ${NAME} 64-bit image with just essential packages installed. Ideal for users who are comfortable with setting up their own environment and tools.
+PRODUCT

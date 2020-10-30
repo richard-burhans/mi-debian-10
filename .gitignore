@@ -1,0 +1,16 @@
+cache
+binary
+binary.*
+blank.json
+build.log
+.build
+chroot
+chroot.packages.*
+.stage
+config/bootstrap
+config/common
+config/source
+.lock
+config/includes.chroot/lib/
+config/includes.chroot/etc/
+config/includes.chroot/usr/
